@@ -5,17 +5,24 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/5ca4d9b311.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
         <title>Google</title>
     </head>
-    <body>
-        <div class = "nav-bar">
+    <nav>
+        <div class="nav-left">
             <li><a>About</a></li>
             <li><a>Store</a></li>
+        </div>
+        <div class="nav-right">
             <li><a>Gmail</a></li>
             <li><a>Images</a></li>
             <li><a><i class="fa-solid fa-table-cells"></i></a></li>
-            <li><a>Sign In</a></li>   
+            <li><a class="sign-in">Sign In</a></li>  
         </div>
+    </nav>
+    <body>
         <div class = "logo">
             <p class = "g">G</p>
             <p class = "o">o</p>
@@ -25,9 +32,10 @@
             <p class = "e">e</p>
         </div>
         <div class = "search-bar">
-            <a><i class="fa-solid fa-magnifying-glass left"></i></a>
-            <a><i class="fa-solid fa-microphone right"></i></a>
-            <a><i class="fa-solid fa-camera right"></i></a>
+            <div><a><i class="fa-solid fa-magnifying-glass left"></i></a></div>
+            <div><form></form></div>
+            <div><a><i class="fa-solid fa-microphone right"></i></a></div>
+            <div><a><i class="fa-solid fa-camera right"></i></a></div>
         </div>
         <div class = "below-search">
             <p class = "left">Google Search</p>
@@ -36,6 +44,20 @@
         <div class = "offered-in">
             <p>Google offered in: <a href = "">Francais</a></p>
         </div>
-        <div class = "footer"></div>
     </body>
+    <footer>
+        <div class="top">
+            <p>Canada</p> 
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search works</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
 </html>
