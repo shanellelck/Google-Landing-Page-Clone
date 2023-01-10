@@ -1,10 +1,12 @@
 body{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 footer{
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin: 0;
 }
 
 nav {
@@ -32,17 +34,18 @@ nav div {
 .nav-right a {
     font-size: 14px;
     font-family: arial, sans-serif;
-    padding: 0 20px;
+    padding: 8px 20px;
 }
 
 nav li {
     list-style: none;
 }
 
+
+
 .sign-in {
     color: white;
     background-color: #4285f4;
-    padding: 9px 23px;
     border-radius: 4px;
     line-height: 60px;
 }
@@ -84,7 +87,7 @@ nav li {
     border: 1px solid lightgrey;
     border-radius: 24px;
     height: 48px;
-    width: 40vw;
+    width: 30vw;
     margin: auto;
     display: grid;
     grid-template-columns: 12% 78% 6% auto;
@@ -101,7 +104,7 @@ nav li {
 }
 
 .search-bar .fa-microphone {
-    color: blue;
+    color: black;
 }
 
 .search-bar:hover {
@@ -113,6 +116,7 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .below-search p {
@@ -142,12 +146,28 @@ nav li {
     text-decoration: none;
 }
 
-footer {
-    font-family: 'Open Sans', sans-serif;
+
+.bottom div {
+    display: flex;
+    flex-direction: row;
 }
 
+footer {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+footer .bottom ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .bottom ul .right {
+    padding-right: 40px;
+}
 footer .top {
-    padding: 15px 30px;
+    padding: 10px 40px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: #70757a;
@@ -156,7 +176,6 @@ footer .top {
 footer ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 footer li {
@@ -171,4 +190,13 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+footer .left li {
+    padding: 0 10px;
+}
+
+footer .right li {
+    padding: 0 10px;
 }
